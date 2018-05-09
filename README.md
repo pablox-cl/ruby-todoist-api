@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/maartenvanvliet/ruby-todoist-api.svg)](https://travis-ci.org/maartenvanvliet/ruby-todoist-api)
+[![Build Status](https://travis-ci.org/stesie/ruby-todoist-api.svg)](https://travis-ci.org/stesie/ruby-todoist-api)
 
 # Todoist::Api
 
@@ -18,7 +18,7 @@ Gem to wrap the Todoist Api v7 as described on https://developer.todoist.com/
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'todoist-api', git: 'https://github.com/maartenvanvliet/ruby-todoist-api', branch: 'master', require: 'todoist'
+gem 'todoist-api', git: 'https://github.com/stesie/ruby-todoist-api', branch: 'master', require: 'todoist'
 
 ```
 
@@ -38,7 +38,7 @@ Possible spinoff would be a gem to do provide a CLI interface to Todoist.
 
 ## Contributing
 
-1. Fork it ( https://github.com/maartenvanvliet/ruby-todoist-api/fork )
+1. Fork it ( https://github.com/stesie/ruby-todoist-api/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

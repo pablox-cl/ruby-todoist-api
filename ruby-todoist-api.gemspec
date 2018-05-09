@@ -6,11 +6,11 @@ require 'todoist/version'
 Gem::Specification.new do |spec|
   spec.name          = "ruby-todoist-api"
   spec.version       = Todoist::VERSION
-  spec.authors       = ["Maarten van Vliet"]
-  spec.email         = ["maartenvanvliet@gmail.com"]
+  spec.authors       = ["Maarten van Vliet", "Stefan Siegl"]
+  spec.email         = ["maartenvanvliet@gmail.com", "stesie@brokenpipe.de"]
   spec.summary       = %q{Wrapper for todoist api.}
   spec.description   = %q{Wrapper for todoist api v7.}
-  spec.homepage      = "https://github.com/maartenvanvliet/ruby-todoist-api"
+  spec.homepage      = "https://github.com/stesie/ruby-todoist-api"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
