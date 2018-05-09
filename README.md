@@ -2,7 +2,7 @@
 
 # Todoist::Api
 
-Gem to wrap the Todoist Api v6 as described on https://developer.todoist.com/
+Gem to wrap the Todoist Api v7 as described on https://developer.todoist.com/
 
 *Note:* Until a more complete coverage of the all Todoist features is achieved the api is unstable and no semantic versioning will be applied.
 

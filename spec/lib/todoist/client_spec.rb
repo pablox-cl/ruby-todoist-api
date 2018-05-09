@@ -41,7 +41,7 @@ describe Todoist::Client do
 
     describe "sends the queue in a request" do
       let!(:stub) {
-        stub_request(:post, "https://todoist.com/API/v6/sync").
+        stub_request(:post, "https://todoist.com/API/v7/sync").
           with(:body => {"commands"=>"[{\"type\":\"test_command\"}]", "token"=>"api_token"}).
           to_return(:status => 200, :body => '{}')
 

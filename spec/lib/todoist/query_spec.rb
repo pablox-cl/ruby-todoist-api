@@ -9,7 +9,7 @@ describe Todoist::Query do
     let(:arguments) { resource_without_id('filter') }
 
     before do
-      stub_request(:post, "https://todoist.com/API/v6/query").
+      stub_request(:post, "https://todoist.com/API/v7/query").
          with(:body => {"queries"=>"[\"tomorrow\",\"p1\"]", "token"=>"api_token"}).
          to_return(:status => 200, :body => json_response_raw('query'), :headers => {})
     end

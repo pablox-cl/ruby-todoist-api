@@ -27,7 +27,7 @@ module Todoist
     end
 
     def query_path
-      '/API/v6/query'
+      '/API/v7/query'
     end
 
     def search(queries)

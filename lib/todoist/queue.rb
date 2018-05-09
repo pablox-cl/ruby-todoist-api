@@ -13,7 +13,7 @@ module Todoist
     end
 
     def path
-      "/API/v6/sync"
+      "/API/v7/sync"
     end
 
     def length
