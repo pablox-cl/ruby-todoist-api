@@ -43,7 +43,9 @@ module Todoist
     end
 
     def logger
-      @logger ||=  Logger.new
+      @logger ||= Logger.new($stdout).tap do |log|
+        log.progname = 'todoist-api'
+      end
     end
 
     def create_command(name, arguments, tmp_id = nil)
