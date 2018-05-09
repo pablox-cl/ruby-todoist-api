@@ -5,14 +5,14 @@ module Todoist
 
     define_attributes %w(
       id
-      item_id
       posted_uid
+      item_id
       project_id
       content
-      is_deleted
-      is_archived
       file_attachment
       uids_to_notify
+      is_deleted
+      is_archived
       posted
     )
   end

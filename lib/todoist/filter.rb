@@ -5,12 +5,12 @@ module Todoist
 
     define_attributes %w(
       id
-      user_id
       name
       query
       color
       item_order
       is_deleted
+      is_favorite
     )
   end
 end

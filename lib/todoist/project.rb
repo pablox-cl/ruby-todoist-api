@@ -5,7 +5,6 @@ module Todoist
 
     define_attributes %w(
       id
-      user_id
       name
       color
       indent
@@ -14,9 +13,9 @@ module Todoist
       shared
       is_deleted
       is_archived
-      archived_date
-      archived_timestamp
+      is_favorite
       inbox_project
+      team_inbox
     )
 
     define_read_only_attributes %w(
