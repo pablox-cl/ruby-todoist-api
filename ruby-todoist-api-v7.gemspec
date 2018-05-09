@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'todoist/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "ruby-todoist-api"
+  spec.name          = "ruby-todoist-api-v7"
   spec.version       = Todoist::VERSION
   spec.authors       = ["Maarten van Vliet", "Stefan Siegl"]
   spec.email         = ["maartenvanvliet@gmail.com", "stesie@brokenpipe.de"]
