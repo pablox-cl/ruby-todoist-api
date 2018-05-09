@@ -16,10 +16,8 @@ module Todoist
       is_favorite
       inbox_project
       team_inbox
-    )
 
-    define_read_only_attributes %w(
-      inbox_project
+      has_more_notes
     )
 
     def items
