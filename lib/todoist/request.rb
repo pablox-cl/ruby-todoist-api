@@ -28,7 +28,6 @@ module Todoist
     def http(uri)
       net = Net::HTTP.new(uri.host, uri.port)
       net.use_ssl = true
-      net.verify_mode = OpenSSL::SSL::VERIFY_NONE
       net.read_timeout = 90
       net.open_timeout = 30
       net
