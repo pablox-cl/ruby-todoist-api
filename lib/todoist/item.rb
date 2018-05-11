@@ -25,7 +25,12 @@ module Todoist
       is_archived
       sync_id
       date_added
+
+      all_day
+      date_completed
+      parent_id
     )
+
 
     def project=(project)
       self.project_id = project.to_hash['id']
