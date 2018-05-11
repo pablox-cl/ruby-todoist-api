@@ -5,8 +5,14 @@ module Todoist
     attr_reader :data
 
     def initialize(result)
+      if result['type'] == 'viewall' then
+        data = flatten(result['data'])
+      else
+        data = result['data']
+      end
+
       @query = result['query']
-      @data = result['data']
+      @data = data
     end
 
     def each(&block)
@@ -17,6 +23,12 @@ module Todoist
 
     def size
       data.size
+    end
+
+    private
+
+    def flatten(data)
+      data.map{|project_block| project_block['uncompleted'] }.flatten
     end
 
   end

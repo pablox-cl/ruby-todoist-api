@@ -22,5 +22,17 @@ describe Todoist::Query do
       expect(result['tomorrow'].size).to eq 2
       expect(result['tomorrow'].first.id).to eq 35825425
     end
+
+    it "flattens results of 'view all' query" do
+      stub_request(:post, "https://todoist.com/API/v7/query").
+        with(:body => {"queries"=>"[\"view all\"]", "token"=>"api_token"}).
+        to_return(:status => 200, :body => json_response_raw('query_view_all'), :headers => {})
+
+      result = query.search(['view all'])[nil]
+
+      expect(result.size).to eq 3
+      expect(result.map{|item| item.content}.flatten).to eq ["foo", "bar", "baz"]
+    end
+
   end
 end
