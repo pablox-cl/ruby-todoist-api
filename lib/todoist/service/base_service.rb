@@ -49,7 +49,7 @@ module Todoist
 
       def all
         response = retrieve([resource_type_plural])
-        self.data = response[resource_type_plural.capitalize].map { |resource| collection_class.new(resource) }
+        self.data = response[resource_type_plural].map { |resource| collection_class.new(resource) }
       end
 
       def create(params, temp_id = nil)
